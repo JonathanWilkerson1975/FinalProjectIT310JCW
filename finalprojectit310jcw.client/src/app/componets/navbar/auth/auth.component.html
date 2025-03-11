@@ -1,0 +1,64 @@
+<!--<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>-->
+
+
+
+
+
+<!-- auth.component.html - Angular Login & Signup UI -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-primary text-white text-center">Login</div>
+        <div class="card-body">
+          <form (submit)="onLogin()">
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="email" class="form-control" [(ngModel)]="loginData.email" required>
+            </div>
+            <div class="mb-3">
+              <label>Password</label>
+              <input type="password" class="form-control" [(ngModel)]="loginData.password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-secondary text-white text-center">Sign Up</div>
+        <div class="card-body">
+          <form (submit)="onSignup()">
+            <div class="mb-3">
+              <label>Name</label>
+              <input type="text" class="form-control" [(ngModel)]="signupData.name" required>
+            </div>
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="email" class="form-control" [(ngModel)]="signupData.email" required>
+            </div>
+            <div class="mb-3">
+              <label>Password</label>
+              <input type="password" class="form-control" [(ngModel)]="signupData.password" required>
+            </div>
+            <button type="submit" class="btn btn-secondary w-100">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

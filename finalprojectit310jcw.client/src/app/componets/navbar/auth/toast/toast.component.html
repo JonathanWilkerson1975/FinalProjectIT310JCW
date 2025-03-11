@@ -1,0 +1,25 @@
+<!--<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>-->
+
+
+
+
+<!-- toast.component.html - Angular Toast Notification UI -->
+<div class="toast-container position-fixed top-0 end-0 p-3">
+  <div class="toast show" *ngIf="isVisible" [ngClass]="{'bg-success': type === 'success', 'bg-danger': type === 'error'}">
+    <div class="toast-header">
+      <strong class="me-auto">Notification</strong>
+      <button type="button" class="btn-close" (click)="isVisible = false"></button>
+    </div>
+    <div class="toast-body">{{ message }}</div>
+  </div>
+</div>
